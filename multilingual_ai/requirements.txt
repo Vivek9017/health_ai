@@ -1,0 +1,5 @@
+flask
+google-generativeai
+ollama
+gtts
+gunicorn

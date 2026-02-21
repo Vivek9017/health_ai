@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Health AI</title>
+    <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --bg-dark: #0b1220;
+            --bg-card: rgba(255,255,255,0.04);
+            --accent-blue: #4fc3f7;
+            --accent-teal: #38efc3;
+            --accent-gradient: linear-gradient(90deg,#4fc3f7,#38efc3);
+            --text-light: #e6f1ff;
+            --text-muted: #8ca0b3;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(160deg,#070c18,#0b1220,#0e1628);
+            color: var(--text-light);
+        }
+
+        .container {
+            width: 90%;
+            max-width: 500px;
+            padding: 40px;
+            text-align: center;
+            background: var(--bg-card);
+            backdrop-filter: blur(20px);
+            border-radius: 20px;
+            border: 1px solid rgba(255,255,255,0.05);
+            box-shadow: 0 20px 60px rgba(0,0,0,0.5);
+        }
+
+        h2 {
+            font-size: 28px;
+            margin-bottom: 10px;
+            background: var(--accent-gradient);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        p {
+            color: var(--text-muted);
+            font-size: 14px;
+            margin-bottom: 30px;
+        }
+
+        .btn {
+            padding: 14px 24px;
+            border-radius: 12px;
+            border: none;
+            cursor: pointer;
+            font-weight: 600;
+            font-size: 15px;
+            background: var(--accent-gradient);
+            color: #001219;
+            transition: 0.3s ease;
+            box-shadow: 0 8px 30px rgba(56,239,195,0.3);
+        }
+
+        .btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 12px 40px rgba(56,239,195,0.5);
+        }
+
+        .footer-text {
+            margin-top: 20px;
+            font-size: 12px;
+            color: var(--text-muted);
+        }
+
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+    <h2>Health AI Assistant 🩺</h2>
+    <p>Your smart medical assistant. Ask symptoms. Get instant guidance.</p>
+
+    <a href="/chat">
+        <button class="btn">Open AI Assistant</button>
+    </a>
+
+    <div class="footer-text">
+        Voice & Text Enabled • Powered by AI
+    </div>
+</div>
+
+</body>
+</html>
